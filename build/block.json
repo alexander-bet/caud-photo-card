@@ -1,0 +1,44 @@
+{
+  "apiVersion": 3,
+  "name": "caudena/photo-card",
+  "title": "Caudena Photo Card",
+  "category": "widgets",
+  "icon": "format-image",
+  "description": "This is the photo card block for Caudena theme",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "photo": {
+      "type": "string",
+      "default": ""
+    },
+    "position": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "socialLinks": {
+      "type": "object",
+      "default": {
+        "X": "",
+        "LinkedIn": "",
+        "Facebook": "",
+        "Instagram": "",
+        "Reddit": "",
+        "HackerNews": ""
+      }
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
