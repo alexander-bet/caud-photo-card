@@ -1,4 +1,4 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps, RichText, InnerBlocks } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const { photo, position, socialLinks, content } = attributes;
@@ -18,6 +18,7 @@ export default function save({ attributes }) {
 						)
 					))}
 				</div>
+				<InnerBlocks.Content />
 			</div>
 		</div>
 	);
